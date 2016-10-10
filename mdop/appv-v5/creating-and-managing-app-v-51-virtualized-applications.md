@@ -84,12 +84,11 @@ Shell extensions are embedded in the package automatically during the sequencing
 
     -   The version of the application is 64-bit.
 
-    -   The Sequencer is running on a 64-bit computer.
+s    -   The Sequencer is running on a 64-bit computer.
 
     -   The package is being delivered to a 64-bit App-V client computer.
 
 The following table lists the supported shell extensions:
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -141,20 +140,12 @@ The following table lists the supported shell extensions:
 
 Copy on write (CoW) file extensions allow App-V 5.1 to dynamically write to specific locations contained in the virtual package while it is being used.
 
-The following table displays the file types that can exist in a virtual package under the VFS directory, but cannot be updated on the computer running the App-V 5.1 client. All other files and directories can be modified.
+The number of file types that can exist in a virtual package under the VFS directory, but cannot be updated on the computer running the App-V 5.1 client, have been recuced to four (from 59), since 5.0. All other files and directories can be modified. The extensions are:
 
-| File Type  	|             	|             	|            	|            	|            	|
-|------------	|-------------	|-------------	|------------	|------------	|------------	|
-| .acm       	| .asa        	| .asp        	| .aspx      	| .ax        	| .bat       	|
-| .cer       	| .chm        	| .clb        	| .cmd       	| .cnt       	| .cnv       	|
-| .com       	| .cpl        	| .cpx        	| .crt       	| .dll       	| .drv       	|
-| .esc       	| .exe        	| .fon        	| .grp       	| .hlp       	| .hta       	|
-| .ime       	| .inf        	| .ins        	| .isp       	| .its       	| .js        	|
-| .jse       	| .lnk        	| .msc        	| .msi       	| .msp       	| .mst       	|
-| .mui       	| .nls        	| .ocx        	| .pal       	| .pcd       	| .pif       	|
-| .reg       	| .scf        	| .scr        	| .sct       	| .shb       	| .shs       	|
-| .sys       	| .tlb        	| .tsp        	| .url       	| .vb        	| .vbe       	|
-| .vbs       	| .vsmacros   	| .ws         	| .wsf       	| .wsh       	|            	|
+.com 
+.dll
+.exe
+.ocx        
 
 
 ## Modifying an existing virtual application package
